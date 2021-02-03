@@ -6,8 +6,6 @@ let router = express.Router();
 router.get("/addname", (req, res) => {
   let data = new Employee({
     name: req.query.name,
-    email: req.query.email,
-    age: req.query.age,
   });
   data
     .save()
